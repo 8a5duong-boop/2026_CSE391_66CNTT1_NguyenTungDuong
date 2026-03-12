@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Form Đăng Ký Nâng Cấp</title>
+</head>
+
+<body>
+
+<h2>Form Đăng Ký</h2>
+
+<form id="registerForm">
+
+<label>Họ và tên</label><br>
+<input type="text" id="fullname">
+<br>
+<span id="nameCount">0/50</span>
+<span id="fullnameError"></span>
+<br><br>
+
+<label>Email</label><br>
+<input type="text" id="email">
+<br>
+<span id="emailError"></span>
+<br><br>
+
+<label>Mật khẩu</label><br>
+<input type="password" id="password">
+<button type="button" id="togglePass">👁</button>
+<br>
+
+<div>
+Mức độ mật khẩu:
+<span id="strength"></span>
+</div>
+
+<span id="passwordError"></span>
+
+<br><br>
+
+<label>Xác nhận mật khẩu</label><br>
+<input type="password" id="confirmPassword">
+<br>
+<span id="confirmError"></span>
+
+<br><br>
+
+<button type="submit">Đăng ký</button>
+
+</form>
+
+<h3 id="success"></h3>
+
+<script src="3.1.js"></script>
+
+</body>
+</html>

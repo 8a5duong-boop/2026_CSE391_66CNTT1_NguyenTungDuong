@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Multi Step Form</title>
+</head>
+
+<body>
+
+<h2>Form Đăng Ký 3 Bước</h2>
+
+<div>
+Tiến trình: <span id="stepInfo">Bước 1 / 3</span>
+</div>
+
+<form id="form">
+
+<!-- STEP 1 -->
+<div id="step1">
+
+<h3>Bước 1: Thông tin cá nhân</h3>
+
+<label>Họ tên</label><br>
+<input type="text" id="fullname">
+<br>
+<span id="nameError"></span>
+
+<br><br>
+
+<label>Ngày sinh</label><br>
+<input type="date" id="birth">
+<br>
+<span id="birthError"></span>
+
+<br><br>
+
+<label>Giới tính</label><br>
+<input type="radio" name="gender" value="Nam"> Nam
+<input type="radio" name="gender" value="Nữ"> Nữ
+<br>
+<span id="genderError"></span>
+
+<br><br>
+
+<button type="button" id="next1">Tiếp theo</button>
+
+</div>
+
+
+<!-- STEP 2 -->
+<div id="step2" style="display:none">
+
+<h3>Bước 2: Thông tin tài khoản</h3>
+
+<label>Email</label><br>
+<input type="text" id="email">
+<br>
+<span id="emailError"></span>
+
+<br><br>
+
+<label>Mật khẩu</label><br>
+<input type="password" id="password">
+<br>
+<span id="passError"></span>
+
+<br><br>
+
+<label>Xác nhận mật khẩu</label><br>
+<input type="password" id="confirm">
+<br>
+<span id="confirmError"></span>
+
+<br><br>
+
+<button type="button" id="back1">Quay lại</button>
+<button type="button" id="next2">Tiếp theo</button>
+
+</div>
+
+
+<!-- STEP 3 -->
+<div id="step3" style="display:none">
+
+<h3>Bước 3: Xác nhận</h3>
+
+<p id="summary"></p>
+
+<button type="button" id="back2">Quay lại</button>
+<button type="submit">Đăng ký</button>
+
+</div>
+
+</form>
+
+<h3 id="success"></h3>
+
+<script src="3.2.js"></script>
+
+</body>
+</html>

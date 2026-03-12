@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Form Đặt Hàng</title>
+</head>
+
+<body>
+
+    <h2>Form Đặt Hàng</h2>
+
+    <form id="orderForm">
+
+    <label>Sản phẩm</label><br>
+    <select id="product">
+    <option value="">-- Chọn sản phẩm --</option>
+    <option value="Ao">Áo</option>
+    <option value="Quan">Quần</option>
+    <option value="Giay">Giày</option>
+    </select>
+    <br>
+    <span id="productError"></span>
+    <br><br>
+
+    <label>Số lượng</label><br>
+    <input type="number" id="quantity">
+    <br>
+    <span id="quantityError"></span>
+    <br><br>
+
+    <label>Ngày giao hàng</label><br>
+    <input type="date" id="date">
+    <br>
+    <span id="dateError"></span>
+    <br><br>
+
+    <label>Địa chỉ giao</label><br>
+    <input type="text" id="address">
+    <br>
+    <span id="addressError"></span>
+    <br><br>
+
+    <label>Ghi chú</label><br>
+    <textarea id="note"></textarea>
+    <br>
+    <span id="noteCount">0/200</span>
+    <span id="noteError"></span>
+    <br><br>
+
+    <label>Thanh toán</label><br>
+    <input type="radio" name="payment" value="COD"> COD
+    <input type="radio" name="payment" value="Bank"> Chuyển khoản
+    <input type="radio" name="payment" value="Wallet"> Ví điện tử
+    <br>
+    <span id="paymentError"></span>
+    <br><br>
+
+    <h3>Tổng tiền: <span id="total">0</span> VNĐ</h3>
+
+    <button type="submit">Đặt hàng</button>
+
+    </form>
+
+    <div id="confirmBox" style="display:none;">
+    <h3>Xác nhận đơn hàng</h3>
+    <p id="summary"></p>
+
+    <button id="confirmBtn">Xác nhận</button>
+    <button id="cancelBtn">Hủy</button>
+    </div>
+
+    <h3 id="success"></h3>
+
+<script src="2.2.js"></script>
+
+</body>
+</html>
